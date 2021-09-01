@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="third.css">
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+
+  box-sizing: border-box;
+  background: rgb(235, 235, 235);
+}
+.head {
+  text-align: center;
+}
+.F200 {
+  font-weight: 200;
+  line-height: 0;
+  padding-top: 2rem;
+}
+.F400 {
+  font-weight: 600;
+}
+p {
+  font-size: 15px;
+}
+.head-p {
+  padding: 0 2rem 0 2rem;
+}
+.text {
+  padding-left: 1.5rem;
+}
+.page {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.page h1 {
+  font-weight: 400;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  width: 350px;
+  margin: 0.8rem;
+  box-shadow: 0px 14px 29px -7px rgba(0, 0, 0, 0.75);
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+.supervisor {
+  border-top: 4px hsl(180, 62%, 55%) solid;
+  position: relative;
+}
+.supervisor img {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.karma {
+  border-top: 4px hsl(0, 78%, 62%) solid;
+
+  position: relative;
+}
+.karma img {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.team-Builder {
+  border-top: 4px hsl(34, 97%, 64%) solid;
+  position: relative;
+}
+.team-Builder img {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.calculator {
+  position: relative;
+  border-top: 4px hsl(212, 86%, 64%) solid;
+}
+.calculator img {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.supervisor,
+.calculator {
+  height: 243px;
+  margin-top: 10rem;
+}
+.karma,
+.team-Builder {
+  height: 243px;
+}
+@media screen and (max-width: 1000px) {
+  .page {
+    flex-direction: column;
+
+    box-sizing: border-box;
+  }
+  .card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .supervisor,
+  .calculator {
+    margin-top: 1rem;
+  }
+}
+</style>
+    
+</head>
+<body>
+    <div class="head">
+    <h1 class="F200">Reliable, efficient delivery</h1>
+    <h1 class="F400">Powered by Technology</h1>
+    <p class="head-p" >Our Artificial Intelligence powered tools use millions of project data <br> points 
+        to ensure that your project is successful
+      </p>
+    </div>
+    
+    <div class="page">
+     
+    <div class="supervisor card">
+        <div class="text">
+        <h2>Supervisor</h2>
+        <p>Monitors activity to identify project roadblocks</p>
+    </div>
+<img src="/images/icon-supervisor.png" alt="">
+    </div>
+    <div class="stack">
+    <div class="team-Builder card ">
+        <div class="text">
+        <h2>Team Builder</h2>
+        <p>Scans our talent network to create the optimal team for your project</p>
+    </div>
+        <img src="/images/icon-team-builder.png" alt="">
+    </div>
+    <div class="karma card">
+        <div class="text">
+        <h2>Karma</h2>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        </div>
+        <img src="/images/icon-karma.png" alt="">
+
+    </div>
+</div>
+<div class="calculator card">
+    <div class="text">
+    <h2>Calculator</h2>
+    <p>Uses data from past projects to provide better delivery estimates</p>
+
+</div>
+    <img src="/images/icon-calculator.png" alt="">
+</div> 
+
+</div>
+</body>
+</html>
